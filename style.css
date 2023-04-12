@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
+}
+h1{
+  text-align: center;
+}
+/* Third Page */
+.num1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.row1{
+  display: flex;
+  justify-content: center;
+}
+
+.row{
+  
+  height: 100px;
+  width: 100px;
+  background-color: cornflowerblue;
+  margin: 30px 40px;
+
+  animation: FirstRow 3s infinite alternate;
+}
+@keyframes FirstRow {
+  0%{
+      transform: skewX(-30deg);
+  }
+  100%{
+      transform: skewX(30deg);
+  }
+}
+.row2{
+  display: flex;
+  justify-content: center;
+}
+.Srow{
+  height: 100px;
+  width: 100px;
+  background-color: lightgray;
+  margin: 30px 40px;
+
+  animation: SecondRow 3s infinite alternate;
+}
+@keyframes SecondRow {
+  0%{
+      transform: skewY(-30deg);
+  }
+  100%{
+      transform: skewY(30deg);
+  }
+}
+
+.row3{
+  display: flex;
+  justify-content: center;
+}
+.Trow{
+  
+  height: 100px;
+  width: 100px;
+  background-color: cornflowerblue;
+  margin: 30px 40px;
+
+  animation: ThirdRow 3s infinite;
+}
+@keyframes ThirdRow {
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+.row4{
+  display: flex;
+  justify-content: center;
+}
+.Frow{
+  height: 100px;
+  width: 100px;
+  background-color: cornflowerblue;
+  margin: 30px 40px;
+
+  animation: FourthRow 3s infinite alternate;
+}
+@keyframes FourthRow {
+  0%{
+      transform: scale(1,1);
+  }
+  100%{
+      transform: scale(1,1.3);
+  }
+}
+#Frow2{
+  height: 100px;
+  width: 100px;
+  background-color: firebrick;
+  margin: 30px 40px;
+
+  animation: FourthRow2 3s infinite alternate;
+}
+@keyframes FourthRow2 {
+  0%{
+      transform: scale(1,1);
+  }
+  100%{
+      transform: scale(1.5,1);
+  }
+}
+#Frow3{
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  margin: 30px 40px;
+
+  animation: FourthRow3 3s infinite alternate;
+}
+@keyframes FourthRow3 {
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+
+/* Second Page */
+
+.item{
+  display: flex;
+  width: 350px;
+  margin: 10px auto;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+}
+.box{
+  background-color: yellowgreen;
+  height: 100px;
+  width: 100px;
+  margin: 10px 10px;
+}
+#box1{
+  transition: all 3s;
+}
+#box1:hover{
+  width: 300px;
+}
+#box2{
+  transition: all 3s;
+}
+#box2:hover{
+  width: 300px;
+  height: 300px;
+}
+#box3{
+  transition: all 3s linear;
+}
+#box3:hover{
+  width: 300px;
+}
+#box4{
+  transition: all 3s ease;
+}
+#box4:hover{
+  width: 300px;
+}
+#box5{
+  transition: all 3s ease-in;
+}
+#box5:hover{
+  width: 300px;
+}
+#box6{
+  transition: all 4s ease-out;
+}
+#box6:hover{
+  width: 300px;
+}
+#box7{
+  transition: all 4s ease-in-out;
+}
+#box7:hover{
+  width: 300px;
+}
+.link{
+  text-align: center;
+  position: absolute;
+  bottom: -60%;
+  right: 56%;
+}

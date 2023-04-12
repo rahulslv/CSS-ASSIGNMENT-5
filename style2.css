@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 10px solid;
+    border-color: white green white orange;
+    opacity: 9;
+}
+.top{
+    font-size: 40px;
+    display: flex;
+    margin: 0px 500px;
+}
+.one{
+    background-color: orange;
+    margin: 0px 10px;
+}
+.two{
+    background-color: white;
+    margin: 0px 10px;
+}
+.three{ 
+    background-color: green;
+}
+.sky{
+    width: 100%;
+    height: 94vh;
+    background-image: url(./sky\ \(1\).jpg);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.city{
+    width: 500%;
+    height: 250px;
+    background-image: url('./city.png');
+    position: absolute;
+    top: 230px;
+    z-index: 3;
+    animation: highway 15s infinite linear;
+}
+.road{
+    width: 1000%;
+    height: 138px;
+    background-image: url('./road.jpg');
+    background-repeat: repeat-x;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 3;
+    animation: highway 5s infinite linear;
+}
+@keyframes highway {
+    100%{
+        transform: translatex(-1550px);
+    }
+}
+.car img{
+    display: block;
+    width: 425px;
+    height: 220px;
+    position: absolute;
+    bottom: 80px;
+    left: 440px;
+    z-index: 5;
+    
+    animation: car 1s infinite linear;
+    /* background-image: url('./img/car.png'); */
+}
+@keyframes car {
+    0%{
+        transform: translateY(2px);
+    }
+    25%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(2px);
+    }
+}
+.wheel img{
+    width: 80px;
+    height: 80px; 
+    z-index: 3;  
+    animation: wheel 0.2s infinite linear;
+}
+.wheel img:first-child{
+    position: absolute;
+    position: absolute;
+    bottom: 102px;
+    left: 475px;
+}
+.wheel img:last-child{
+    position: absolute;
+    bottom: 102px;
+    right: 472px;
+}
+@keyframes wheel {
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.flag{
+    height: 65px;
+    width: 68px;
+    background-image: url('./Tiranga1\ \(1\).svg');
+    position: absolute;
+    right: 480px;
+    bottom: 203px;
+    z-index: 7;
+    animation: car 1s infinite linear;
+}
+.sun img{
+    height: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+
+    animation: sun 10s infinite;
+}
+
+@keyframes sun {
+    100%{
+        transform: translateX(-250px);
+    }
+}
